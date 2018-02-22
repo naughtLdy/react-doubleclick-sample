@@ -1,0 +1,11 @@
+body {
+  padding-top: 80px;
+}
+.btn-area {
+  display: block;
+  margin: 0 5%;
+}
+.btn-area .btn {
+  display: block;
+  margin: 0 auto;
+}
