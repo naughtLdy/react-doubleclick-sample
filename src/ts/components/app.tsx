@@ -23,7 +23,7 @@ export class App extends React.Component<IAppProps, IAppState> {
     toast.success("Single Click Notification !", {
       position: toast.POSITION.TOP_CENTER,
       className: css({
-        background: "blue"
+        background: "#217dbb"
       })
     });
   };
@@ -32,7 +32,7 @@ export class App extends React.Component<IAppProps, IAppState> {
     toast.success("Double Click Notification !", {
       position: toast.POSITION.TOP_CENTER,
       className: css({
-        background: "red"
+        background: "#d62c1a"
       })
     });
   };
@@ -75,24 +75,28 @@ export class App extends React.Component<IAppProps, IAppState> {
 
   render() {
     return (
-      <div>
-        <a href="javascript:void(0)"
+      <div className="btn-area">
+        <a className="btn btn-lg btn-primary"
+          href="javascript:void(0)"
           onClick={(e) => this.handleOnSingleClick(e)}>
           Single Click
         </a>
         <br />
-        <a href="javascript:void(0)"
+        <a className="btn btn-lg btn-primary"
+          href="javascript:void(0)"
           onDoubleClick={(e) => this.handleOnDoubleClick(e)}>
           Double Click
         </a>
         <br />
-        <a href="javascript:void(0)"
+        <a className="btn btn-lg btn-primary"
+          href="javascript:void(0)"
           onClick={(e) => this.handleOnSingleClick(e)}
           onDoubleClick={(e) => this.handleOnDoubleClick(e)}>
           Single Click and Double Click
         </a>
         <br />
-        <a href="javascript:void(0)"
+        <a className="btn btn-lg btn-primary"
+          href="javascript:void(0)"
           onClick={(e) => this.handleOnSingleOrDoubleClick(e)}>
           Single Click or Double Click
         </a>
